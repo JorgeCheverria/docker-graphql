@@ -31,10 +31,12 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t jorgecheverria96/docker-graphql:0.0.2 .
+        docker build -t jorgecheverria96/docker-graphql:lasted .
         
     - name: Push Docker Image
       run: |
         docker push jorgecheverria96/docker-graphql:0.0.2 
+        docker push jorgecheverria96/docker-graphql:lasted
      
      
 #     - name: Build the Docker image
